@@ -1,13 +1,95 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Política de privacidad de QR del Portapapeles."><title>Política de privacidad — QR del Portapapeles</title><link rel="stylesheet" href="styles.css"></head><body><main>
-<header><span class="mark">QR</span><div><p class="eyebrow">QR del Portapapeles</p><h1>Política de privacidad</h1><p class="updated">Última actualización: 27 de septiembre de 2026</p></div></header>
-<section class="summary"><h2>Resumen sencillo</h2><p>QR del Portapapeles genera códigos QR localmente en tu navegador. No envía el contenido a servidores, no utiliza analítica, publicidad ni seguimiento, y no vende ni comparte información.</p></section>
-<section><h2>Información que procesa</h2><p>La extensión procesa contenido únicamente después de una acción explícita del usuario: abrir la extensión, utilizar el atajo, pulsar un botón o elegir una opción del menú contextual.</p><ul><li>Texto del portapapeles.</li><li>Texto o enlaces seleccionados.</li><li>La dirección de la pestaña activa al solicitar un QR de esa página.</li><li>Preferencias e historial local, únicamente si el usuario lo activa.</li></ul><p>Se utiliza exclusivamente para generar, mostrar, copiar, descargar o reutilizar el QR solicitado.</p></section>
-<section><h2>Almacenamiento y retención</h2><p>El último QR puede guardarse en almacenamiento de sesión y desaparece al terminar la sesión del navegador.</p><p>El historial permanente está desactivado por defecto. Si se activa, se guarda localmente durante 1, 7 o 30 días y puede borrarse desde Ajustes.</p><p>La extensión intenta evitar que posibles contraseñas, tokens, secretos o claves privadas se incorporen al historial. Esta detección preventiva no sustituye el criterio del usuario.</p></section>
-<section><h2>Portapapeles</h2><p>El permiso de lectura se utiliza cuando el usuario abre o activa la extensión para generar un QR. El permiso opcional de escritura se solicita únicamente al pulsar “Copiar PNG”.</p></section>
-<section><h2>Transferencias, terceros y código remoto</h2><p>Ningún contenido procesado se transmite fuera del dispositivo. No compartimos información con terceros. La extensión no realiza solicitudes de red para generar QR ni ejecuta código remoto.</p></section>
-<section><h2>Permisos del navegador</h2><dl><dt>activeTab y scripting</dt><dd>Mostrar temporalmente el QR en la pestaña elegida.</dd><dt>clipboardRead</dt><dd>Leer el contenido copiado al solicitar un QR.</dd><dt>clipboardWrite, opcional</dt><dd>Copiar el QR como PNG.</dd><dt>contextMenus</dt><dd>Crear QR desde selección, enlaces o páginas.</dd><dt>offscreen</dt><dd>Usar Clipboard API desde Manifest V3.</dd><dt>storage</dt><dd>Guardar preferencias, sesión e historial local opcional.</dd></dl></section>
-<section><h2>Control y eliminación</h2><p>El historial puede desactivarse y borrarse desde Ajustes. Los permisos opcionales pueden revocarse y desinstalar la extensión elimina sus datos locales conforme al comportamiento de Chrome.</p></section>
-<section><h2>Uso limitado</h2><p>El uso de información recibida de las APIs de Chrome cumple la Política de Datos de Usuario de Chrome Web Store, incluidos sus requisitos de Uso Limitado. Se utiliza solamente para proporcionar o mejorar la funcionalidad visible solicitada por el usuario.</p></section>
-<section><h2>Cambios</h2><p>Si esta política cambia de manera significativa, actualizaremos esta página y su fecha.</p></section>
-<section><h2>Contacto</h2><p>Consultas de privacidad y soporte: <a href="https://github.com/OrmazabalDev/qr-portapapeles-privacy/issues">GitHub Issues</a>.</p></section>
-</main></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de privacidad de la extensión QR del Portapapeles.">
+  <title>Política de privacidad | QR del Portapapeles</title>
+  <link rel="icon" href="icon-128.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="QR del Portapapeles">
+        <img src="icon-128.png" width="36" height="36" alt="">
+        <span>QR del Portapapeles</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a aria-current="page" href="./">Privacidad</a>
+        <a href="https://github.com/OrmazabalDev/qr-portapapeles-privacy/issues">Soporte</a>
+        <a href="https://github.com/OrmazabalDev/qr-portapapeles-privacy">GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article>
+      <header class="document-header">
+        <p class="document-type">Documento público</p>
+        <h1>Política de privacidad</h1>
+        <p class="lead">Cómo QR del Portapapeles procesa la información necesaria para generar códigos QR.</p>
+        <p class="updated">Última actualización: 27 de septiembre de 2026</p>
+      </header>
+      <aside class="notice" aria-labelledby="summary-title">
+        <h2 id="summary-title">En pocas palabras</h2>
+        <p>Los códigos QR se generan localmente en tu navegador. El contenido no se envía a servidores, no se vende ni se comparte, y no utilizamos publicidad, analítica o seguimiento.</p>
+      </aside>
+      <section>
+        <h2>Información que procesa</h2>
+        <p>La extensión procesa contenido únicamente después de una acción explícita del usuario: abrir la extensión, utilizar el atajo, pulsar un botón o elegir una opción del menú contextual.</p>
+        <ul>
+          <li>Texto del portapapeles.</li>
+          <li>Texto o enlaces seleccionados.</li>
+          <li>La dirección de la pestaña activa al solicitar un QR de esa página.</li>
+          <li>Preferencias e historial local, únicamente si el usuario lo activa.</li>
+        </ul>
+        <p>Esta información se utiliza exclusivamente para generar, mostrar, copiar, descargar o reutilizar el QR solicitado.</p>
+      </section>
+      <section>
+        <h2>Almacenamiento y retención</h2>
+        <p>El último QR puede guardarse en almacenamiento de sesión y desaparece al terminar la sesión del navegador.</p>
+        <p>El historial permanente está desactivado por defecto. Si se activa, se guarda localmente durante 1, 7 o 30 días y puede borrarse desde Ajustes.</p>
+        <p>La extensión intenta evitar que posibles contraseñas, tokens, secretos o claves privadas se incorporen al historial. Esta detección preventiva no sustituye el criterio del usuario.</p>
+      </section>
+      <section>
+        <h2>Uso del portapapeles</h2>
+        <p>El permiso de lectura se utiliza cuando el usuario abre o activa la extensión para generar un QR. El permiso opcional de escritura se solicita únicamente al pulsar “Copiar PNG”.</p>
+      </section>
+      <section>
+        <h2>Transferencias, terceros y código remoto</h2>
+        <p>Ningún contenido procesado se transmite fuera del dispositivo. No compartimos información con terceros. La extensión no realiza solicitudes de red para generar códigos QR ni ejecuta código remoto.</p>
+      </section>
+      <section>
+        <h2>Permisos del navegador</h2>
+        <dl class="permissions">
+          <div><dt>activeTab y scripting</dt><dd>Mostrar temporalmente el QR en la pestaña elegida.</dd></div>
+          <div><dt>clipboardRead</dt><dd>Leer el contenido copiado al solicitar un QR.</dd></div>
+          <div><dt>clipboardWrite (opcional)</dt><dd>Copiar el QR como imagen PNG.</dd></div>
+          <div><dt>contextMenus</dt><dd>Crear un QR desde una selección, enlace o página.</dd></div>
+          <div><dt>offscreen</dt><dd>Utilizar Clipboard API desde Manifest V3.</dd></div>
+          <div><dt>storage</dt><dd>Guardar preferencias, sesión e historial local opcional.</dd></div>
+        </dl>
+      </section>
+      <section>
+        <h2>Control y eliminación</h2>
+        <p>El historial puede desactivarse y borrarse desde Ajustes. Los permisos opcionales pueden revocarse. Al desinstalar la extensión, Chrome elimina sus datos locales conforme al comportamiento del navegador.</p>
+      </section>
+      <section>
+        <h2>Uso limitado</h2>
+        <p>El uso de información recibida de las APIs de Chrome cumple la Política de Datos de Usuario de Chrome Web Store, incluidos sus requisitos de Uso Limitado. La información se utiliza solamente para proporcionar o mejorar la funcionalidad visible solicitada por el usuario.</p>
+      </section>
+      <section>
+        <h2>Cambios en esta política</h2>
+        <p>Si esta política cambia de manera significativa, actualizaremos esta página y la fecha indicada al comienzo del documento.</p>
+      </section>
+      <section>
+        <h2>Contacto</h2>
+        <p>Para consultas de privacidad o soporte, abre una solicitud en <a href="https://github.com/OrmazabalDev/qr-portapapeles-privacy/issues">GitHub Issues</a>.</p>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <p>QR del Portapapeles · <a href="https://github.com/OrmazabalDev/qr-portapapeles-privacy">Código de este sitio</a></p>
+  </footer>
+</body>
+</html>
