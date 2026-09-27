@@ -3,6 +3,8 @@
 Sitio público de la política de privacidad de la extensión **QR del Portapapeles**.
 
 - Política: https://ormazabaldev.github.io/qr-portapapeles-privacy/
-- Soporte y consultas: https://github.com/OrmazabalDev/qr-portapapeles-privacy/issues
+- Responsable: Diego Ormazábal
+- Contacto: ormazabal.dev@gmail.com
+- Incidencias técnicas: https://github.com/OrmazabalDev/qr-portapapeles-privacy/issues
 
 El sitio se publica automáticamente mediante GitHub Pages al actualizar la rama `main`.
