@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <mask id="n">
+      <rect width="128" height="128" fill="#fff"/>
+      <rect x="91" y="91" width="13" height="13" rx="2.5" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#07111F"/>
+  <rect x="20" y="17" width="88" height="96" rx="35" fill="none" stroke="#0B73FF" stroke-width="19" mask="url(#n)"/>
+</svg>

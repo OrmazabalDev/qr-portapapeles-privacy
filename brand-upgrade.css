@@ -1,0 +1,56 @@
+:root {
+  --qrcero-blue: #0b73ff;
+  --qrcero-ink: #07111f;
+  --qrcero-paper: #f7faff;
+}
+
+.qrcero-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.qrcero-brand img {
+  display: block;
+  width: clamp(132px, 15vw, 174px);
+  height: auto;
+}
+
+html[data-theme="light"] .site-header .qrcero-brand img {
+  content: url("assets/brand/qrcero-logo-dark.svg");
+}
+
+html[data-theme="dark"] .site-header .qrcero-brand img,
+.site-footer .qrcero-brand img {
+  content: url("assets/brand/qrcero-logo-light.svg");
+}
+
+.qrcero-brand--injected {
+  margin-inline-end: auto;
+}
+
+.qrcero-brand-fallback {
+  position: fixed;
+  z-index: 1000;
+  top: 18px;
+  left: 22px;
+  padding: 10px 14px;
+  border: 1px solid rgba(148, 163, 184, .22);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--qrcero-ink) 88%, transparent);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, .18);
+  backdrop-filter: blur(16px);
+}
+
+@media (prefers-color-scheme: light) {
+  .qrcero-brand-fallback {
+    background: color-mix(in srgb, white 88%, transparent);
+  }
+}
+
+@media (max-width: 640px) {
+  .qrcero-brand img { width: 132px; }
+  .qrcero-brand-fallback { top: 12px; left: 12px; }
+}

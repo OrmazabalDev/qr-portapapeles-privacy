@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 356 128" role="img" aria-labelledby="title desc">
+  <title id="title">QRCero</title>
+  <desc id="desc">Logotipo QRCero para fondos claros</desc>
+  <defs>
+    <mask id="notch-dark">
+      <rect width="128" height="128" fill="#fff"/>
+      <rect x="91" y="91" width="13" height="13" rx="2.5" fill="#000"/>
+    </mask>
+  </defs>
+  <text x="8" y="91" fill="#07111F" font-family="Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Arial, sans-serif" font-size="82" font-weight="800" letter-spacing="-5">QRCer</text>
+  <g transform="translate(241 5) scale(.92)">
+    <rect x="17" y="12" width="94" height="104" rx="39" fill="none" stroke="#0B73FF" stroke-width="21" mask="url(#notch-dark)"/>
+  </g>
+</svg>

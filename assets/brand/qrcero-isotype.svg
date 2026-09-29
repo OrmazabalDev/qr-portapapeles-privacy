@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">QRCero</title>
+  <desc id="desc">Cero modular azul con una muesca cuadrada</desc>
+  <defs>
+    <mask id="notch">
+      <rect width="128" height="128" fill="#fff"/>
+      <rect x="91" y="91" width="13" height="13" rx="2.5" fill="#000"/>
+    </mask>
+  </defs>
+  <rect x="17" y="12" width="94" height="104" rx="39" fill="none" stroke="#0B73FF" stroke-width="21" mask="url(#notch)"/>
+</svg>
