@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ormazabaldev.github.io/qrcero/sitemap.xml
