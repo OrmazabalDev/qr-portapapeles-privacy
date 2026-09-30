@@ -2,7 +2,7 @@
 
 Sitio estático de QRCero, producto de Ormazabal DEV, publicado mediante GitHub Pages.
 
-**Sitio:** https://ormazabaldev.github.io/qr-portapapeles-privacy/
+**Sitio:** https://ormazabaldev.github.io/qrcero/
 
 ## Objetivo
 
